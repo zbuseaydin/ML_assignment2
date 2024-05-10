@@ -60,7 +60,7 @@ def evaluate_decision_tree(max_depth, train_X, train_Y, test_X, test_Y):
     decision_tree = decision_tree.fit(train_X, train_Y)
     train_accuracy = decision_tree.score(train_X, train_Y)
     test_accuracy = decision_tree.score(test_X, test_Y)
-    print(f'Training Accuracy: {train_accuracy}\nTest Accuracy: {test_accuracy}')
+    print(f'Training Accuracy: {train_accuracy:.4f}\nTest Accuracy: {test_accuracy:.4f}')
 
     class_names = ["M", "B"]
     plt.figure(figsize=(12,12))
