@@ -88,12 +88,13 @@ def evaluate_random_forests(train_X, train_Y, test_X, test_Y):
 
 
 if __name__ == "__main__":
-    numpy.random.seed(66)
+    numpy.random.seed(42)
     train_X, test_X, train_Y, test_Y = prepare_data("./breast+cancer+wisconsin+diagnostic/wdbc.data")
     max_depth = tune_max_depth(30, train_X, train_Y)
     print("Tuned max depth:", max_depth)
 
     feature_importance_df = evaluate_decision_tree(max_depth, train_X, train_Y, test_X, test_Y)
+    print(feature_importance_df)
 
     logistic_regression(train_X, train_Y, test_X, test_Y, feature_importance_df)
     evaluate_random_forests(train_X, train_Y, test_X, test_Y)
