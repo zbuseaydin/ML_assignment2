@@ -1,5 +1,4 @@
 from torchvision import datasets
-import PIL 
 from PIL import Image
 import os
 import numpy as np
@@ -155,7 +154,7 @@ def calculate_accuracy(clusters):
 
 def apply_pca(images):
     new_images = {}
-    pca = PCA(n_components = 128)
+    pca = PCA(n_components = 64)
     images_list = np.array(list(images.values()))
     images_list = pca.fit_transform(images_list)
     for i, image_name in enumerate(images.keys()):
