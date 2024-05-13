@@ -12,7 +12,7 @@ sanitized_data_directory = './mnist_data/sanitized'
 
 args = argparse.ArgumentParser()
 args.add_argument("--similarity_distance", "-s", type=str, default='euclidian', help= ['euclidian', 'cosine'])
-args.add_argument("--pca", "-p", type=bool, default=False, help="Should PCA be applied to the images?")
+args.add_argument("--pca", "-p", action="store_true", help="Should PCA be applied to the images")
 args = args.parse_args()
 
 
@@ -154,7 +154,7 @@ def calculate_accuracy(clusters):
 
 def apply_pca(images):
     new_images = {}
-    pca = PCA(n_components = 64)
+    pca = PCA(n_components = 100)
     images_list = np.array(list(images.values()))
     images_list = pca.fit_transform(images_list)
     for i, image_name in enumerate(images.keys()):
