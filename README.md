@@ -18,10 +18,13 @@ The script prints out the training accuracy and test accuracy of the decision tr
 
 ## Part 2: Support Vector Machines
 ### Data
+The data is imported via the keras module.
 ### Running the Code
-
+The script can be run with the following command:
+```python3 svm_part_{part}.py``` where {part} is a,b,c or d.
+To apply PCA for the second part the variable apply_pca can be set to True. 
 ### Output
-
+The code creates a file that contains information about the training and test accuracies. The file also contains information about the training times.
 
 ## Part 3: Clustering
 ### Data
