@@ -190,6 +190,7 @@ if __name__ == '__main__':
         
     clusters, centroids = k_means(images, similarity_distance = similarity_distance)
     counts = calculate_counts_in_clusters(clusters)
+    print("Counts in clusters: ", counts)
     acc = calculate_accuracy(counts)
     print("Accuracy: ", round(acc,4))  
     entropy = measure_entropy(counts)
