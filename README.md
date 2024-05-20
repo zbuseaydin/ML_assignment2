@@ -1,12 +1,6 @@
 # CMPE462 - Machine Learning Assignment 2
 ## Dependencies
-- sklearn
-- sklearn.model_selection
-- sklearn.linear_model
-- sklearn.ensemble
-- matplotlib.pyplot
-- numpy
-- pandas
+Can be found here in [requirements.txt file](https://github.com/zbuseaydin/ML_assignment2/blob/main/requirements.txt)
   
 ## Part 1: Decision Trees
 ### Data
