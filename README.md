@@ -14,12 +14,11 @@ Data is under the "breast+cancer+wisconsin+diagnostic" directory which is in the
 The script can be run with the following command:
 ```python3 decision_tree.py```
 ### Output
-The script outputs the following plots:
+The script prints out the training accuracy and test accuracy of the decision tree and outputs the following plots:
 - Max depth of the decision tree vs accuracy
 - The learned tree
 - Number of selected features vs the accuracy of the logistic regression model
-- Number of trees of the random forest vs accuracy
-And it also prints out the training accuracy and test accuracy of the decision tree.
+- Number of trees of the random forest vs accuracy.
 
 
 ## Part 2: Support Vector Machines
