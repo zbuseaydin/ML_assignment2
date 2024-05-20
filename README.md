@@ -1,6 +1,5 @@
 # CMPE462 - Machine Learning Assignment 2
-## Part 1: Decision Trees
-### Dependencies
+## Dependencies
 - sklearn
 - sklearn.model_selection
 - sklearn.linear_model
@@ -8,6 +7,8 @@
 - matplotlib.pyplot
 - numpy
 - pandas
+  
+## Part 1: Decision Trees
 ### Data
 Data is under the "breast+cancer+wisconsin+diagnostic" directory which is in the same directory as the script.
 ### Running the Code
@@ -22,8 +23,6 @@ The script prints out the training accuracy and test accuracy of the decision tr
 
 
 ## Part 2: Support Vector Machines
-### Dependencies
-- 
 ### Data
 ### Running the Code
 
@@ -31,8 +30,6 @@ The script prints out the training accuracy and test accuracy of the decision tr
 
 
 ## Part 3: Clustering
-### Dependencies
-- 
 ### Data
 ### Running the Code
 ### Output
