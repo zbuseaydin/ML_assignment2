@@ -27,6 +27,13 @@ To apply PCA for the second part the variable apply_pca can be set to True.
 The code creates a file that contains information about the training and test accuracies. The file also contains information about the training times.
 
 ## Part 3: Clustering
-### Data
+Mnist dataset is imported by using torchvision. 
 ### Running the Code
+```python3 k-mean.py -s 'euclidian'```: uses euclidian distance
+```python3 k-mean.py -s 'cosine' ``` : uses cosine similarity
+
+You could add '-p' flag to use PCA as feature extracter e.g. ```python3 k-mean.py -s 'cosine' -p ``` 
+
 ### Output
+Code prints out the clusters and asked stats.
+
